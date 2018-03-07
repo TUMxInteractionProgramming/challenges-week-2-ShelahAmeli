@@ -1,6 +1,27 @@
 <!DOCTYPE html >
 <!-- #1 #structure #document -->
 <html>
+    <!--Improve the #channels view
+#moocus, a very talkative duck, will be our app logo. To add moocus’ picture to your app you could use a local file. However, when your colleagues will review your code online, references to local files will not work anymore. For this reason we provide an image pack on our server that is accessible from everywhere. You can reference it as follows: https://ip.lfe.mw.tum.de/sections/anyImage.png. Just replace anyImage.png with the respective file name.
+Insert Moocus (moocus.png) into the app bar above the channel area. Do not forget to set a fallback text, if the image cannot be displayed. Resize the image to a height of 56px using inline CSS.
+So far, your channels are simple headlines or paragraphs. You have learned better ways to structure menus or lists than using <h#></h#> tags. Rework them to be a #list! Adapt your CSS to keep the list’s background white.
+Our list is rather a navigation to different channels than a list. So it should not have bullets. Remove the #bullets by using CSS.
+Each channel can be marked as #favorite with a little star-button. From our image pack, insert star.png for channels you really like and star-o.png for those you do not care about so much.
+Work on the #tab-bar
+At the bottom of the chatter|app will be a tab bar. Wrap the three buttons in a #container at the bottom and let it have a white background.
+Insert #images from the image pack before each button’s text. Use lightbulb-o.png for ‘new’, fire.png for ‘trending’, and star.png for ‘favorites’.
+Improving the #chat view
+Group each chat message in a #container.
+Make these containers use 80% of the browser’s #width.
+Tip: You learned about a property, which sets the width of an element, when formatting images.
+Connect all the messages’ creator #locations (e.g., cheeses.yard.applies) with the w3w service. The map with the corresponding location should be opened in a new tab.
+Change the preset #link color to primary text color.
+Cleanup
+Clean up your code! Make useful sections and comment your code.
+All links should be working.
+All images (e.g. icons) should have a fallback text.
+Check code & syntax. Using W3C Validator helps.-->
+    
 <head>
 
     <!-- #1 #structure #title -->
@@ -49,7 +70,7 @@
 
 
         /*styles for channel area*/
-        h2 {
+        ul {
             /* #2 #colorful #channelandchat */
             background-color: white;
         }
@@ -84,14 +105,16 @@
 
 <!-- channel area -->
 <!-- #1 #channels #app-bar -->
-<h1>chatter|app</h1>
+<h1><img src="https://ip.lfe.mw.tum.de/sections/anyImage.png" alt="Moocus- Chatter App Logo" height="56px">chatter|app</h1>
 
 <!-- #1 #channels #topics -->
-<h2>#Yummy</h2>
-<h2>#SevenContinents</h2>
-<h2>#KillerApp</h2>
-<h2>#FirstPersonOnMars</h2>
-<h2>#Octoberfest</h2>
+    <ul>
+        <li>#Yummy</li>
+        <li>#SevenContinents</li>
+        <li>#KillerApp</li>
+        <li>#FirstPersonOnMars</li>
+        <li>#Octoberfest</li>
+    </ul>
 
 <!-- #1 #channels #buttons -->
 <button>new</button>
