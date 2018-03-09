@@ -1,3 +1,13 @@
+/* #2 #colorful #palette is:
+          * Background: #F5F5F5 (GREY 100)
+          * Primary Text: black
+
+          * Primary color: #3F51B5 (INDIGO)
+          * Primary color_text : white
+          * Accent color: #CDDC39 (LIME)
+          * Accent color_text: black
+          */
+
 /* Global */
 
 * {
@@ -20,8 +30,7 @@ button {
 	text-align: center;
 }
 
-a,
-button {
+a, button {
 	/* #2 #font capital #letters */
 	text-transform: uppercase;
 }
@@ -35,17 +44,41 @@ h1 {
 }
 
 /* Channels List */
+.current-channel {
+	border-left: 4px;
+	color: #3F51B5;
+}
+li {
+	padding: 16px;
+	font-size: 16px;
+	box-sizing: border-box;
+	height: 48px;
+	border: 1px thin #f5f5f5;
+}
 
 /* Tab bar */
 #tab-bar {
 	 background-color: white;
 	
 }
+#tab-bar button {
+	background-color: white;
+	border: 0px;
+	font-size: 13px;
+	width: 33%;
+	height: 72px;
+	padding: 16px;
+}
+.selected {
+	border-bottom: 4px;
+	color: #3F51B5;
+}
 
 /* Messages */
 .message {
-	 width: 80%;
+	width: 80%;
 	margin-bottom: 8px;
+	margin-left: 2.5%;
 }
 .message h3 {
 	font-size: medium;
@@ -62,4 +95,7 @@ h1 {
 .message h3 em {
 	font-size: larger;
 	font-style: normal;
+}
+#own-message {
+	margin-left: 17.5%;
 }

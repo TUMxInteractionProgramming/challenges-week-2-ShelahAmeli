@@ -11,7 +11,10 @@
 	<meta charset="UTF-8">
 
 	<!-- #2 #css #elements -->
+	<!-- External CSS styling -->
 	<link rel="stylesheet" href="css/style.css" />
+	
+	<!-- Internal CSS styling -->
 	<style>
 		/* #2 #colorful #palette is:
           * Background: #F5F5F5 (GREY 100)
@@ -102,16 +105,17 @@
 	<!-- make the channels a list and also inculde images -->
 	<ul>
 		<li>#Yummy<img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Favorite"></li>
-		<li>#SevenContinents<img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="Just Alright"></li>
+		<!-- Class added to highlight selected channel -->
+		<li  class="current-channel">#SevenContinents<img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="Just Alright"></li>
 		<li>#KillerApp<img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Favorite"></li>
 		<li>#FirstPersonOnMars<img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="Just Alright"></li>
 		<li>#Octoberfest<img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Favorite"></li>
 	</ul>
 
-	<!-- wrap tab bar in a container -->
+	<!-- wrap tab bar in a container and included an ID -->
 	<div id="tab-bar">
 		<!-- #1 #channels #buttons -->
-		<button><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="New Idea">new</button>
+		<button class="selected"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="New Idea">new</button>
 		<button><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="What's hot">trending</button>
 		<button><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Best channels">favorites</button>
 	</div>
@@ -127,8 +131,8 @@
     </small>
 	</h1>
 
-	<!-- wrap each message area in a container -->
-	<div class="message">
+	<!-- wrap each message area in a container, add class for each message and ID for selected message -->
+	<div class="message" id="own-message">
 		<!-- #1 #chat #metadata contains location, weekday, day, and time -->
 		<h3>
 			<!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
