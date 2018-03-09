@@ -1,0 +1,65 @@
+/* Global */
+
+* {
+	/* #2 #font #faces */
+	font-family: 'Arial', sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	/* #2 #colorful #background */
+	background-color: #F5F5F5;
+}
+
+button {
+	/* #2 #colourful #plusfive */
+	background-color: #CDDC39;
+	color: black;
+	/* #2 center text */
+	text-align: center;
+}
+
+a,
+button {
+	/* #2 #font capital #letters */
+	text-transform: uppercase;
+}
+
+/* App Bar */
+
+h1 {
+	/* #2 #colourful #app-bar */
+	background-color: #3F51B5;
+	color: white;
+}
+
+/* Channels List */
+
+/* Tab bar */
+#tab-bar {
+	 background-color: white;
+	
+}
+
+/* Messages */
+.message {
+	 width: 80%;
+	margin-bottom: 8px;
+}
+.message h3 {
+	font-size: medium;
+}
+.message p {
+	background-color: white;
+	padding: 16px;
+}
+.message button {
+	background-color: #CDDC39;
+	color: black; 
+	text-transform: uppercase;
+}
+.message h3 em {
+	font-size: larger;
+	font-style: normal;
+}
